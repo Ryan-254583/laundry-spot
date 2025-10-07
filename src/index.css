@@ -1,0 +1,33 @@
+:root{
+  --blue-700: #1e40af;
+  --blue-500: #3b82f6;
+  --sky-200: #bfdbfe;
+  --white: #ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{background: linear-gradient(180deg, var(--sky-200), var(--blue-500)); color:var(--white); min-height:100vh;}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 32px;background:rgba(30,64,175,0.7);backdrop-filter: blur(6px);position:sticky;top:0;z-index:10;}
+.logo-row{display:flex;align-items:center;gap:12px;}
+.site-title{font-size:20px;font-weight:700;letter-spacing:0.6px;}
+nav a{margin-left:18px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;}
+.hero{padding:80px 20px;text-align:center;}
+.hero h2{font-size:34px;margin-bottom:12px;}
+.hero p{font-size:16px;margin-bottom:18px;opacity:0.95}
+.cta{background:var(--white);color:var(--blue-700);font-weight:600;padding:12px 20px;border-radius:999px;display:inline-block;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.12);}
+.section{padding:56px 20px;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:980px;margin:0 auto;}
+.card{background:rgba(30,64,175,0.22);padding:20px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.08);text-align:center;}
+.card h4{font-size:18px;margin-bottom:8px;}
+.card p{font-size:14px;opacity:0.95;}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;max-width:980px;margin:0 auto;}
+.price-card{background:rgba(13,42,88,0.32);padding:18px;border-radius:14px;text-align:center;}
+.price-card h4{font-size:16px;margin-bottom:8px;}
+.price-card p{font-weight:700;font-size:18px;}
+.about{max-width:900px;margin:0 auto;font-size:16px;line-height:1.6;}
+.contact{max-width:700px;margin:0 auto;}
+.contact .info{display:flex;flex-direction:column;gap:8px;align-items:center;}
+.footer{background:rgba(15,23,42,0.5);text-align:center;padding:18px 10px;font-size:13px;}
+@media(min-width:720px){
+  .hero h2{font-size:44px;}
+  .site-title{font-size:22px;}
+}
